@@ -33,3 +33,7 @@ end
 def sum_array(integers)
   integers.inject {|sum,n| sum + n}
 end
+
+def add_s(strings)
+  strings.each {|string| string << "s"}
+end
