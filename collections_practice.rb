@@ -27,5 +27,5 @@ def kesha_maker(strings)
 end
 
 def find_a(strings)
-  strings.select {|string| string[0] = "a"}
+  strings.select {|string| string[0]=="a"}
 end
