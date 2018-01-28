@@ -35,5 +35,6 @@ def sum_array(integers)
 end
 
 def add_s(strings)
-  strings.each {|string| string << "s"}
+  #strings.each {|string| string << "s"}
+  strings.each_with_index.collect {|string, index| string << "s" index != 2}
 end
