@@ -36,5 +36,9 @@ end
 
 def add_s(strings)
   #strings.each {|string| string << "s"}
-  strings.each_with_index.collect {|string, index| string << "s" index != 2}
+  strings.each_with_index.collect do |string, index| 
+    if index != 2
+      string << "s"
+    end
+  end
 end
